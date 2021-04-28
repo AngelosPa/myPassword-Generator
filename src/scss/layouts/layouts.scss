@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+body {
+  @include flexthing;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#000000, green, #000000);
+}
+.main-container {
+  @include flexthing;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.541);
+
+  width: 50%;
+  height: 50%;
+}
+input {
+  margin-bottom: 1rem;
+  color: white;
+  background-color: green;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 20%;
+}
+button {
+  border: none;
+}
+​ button:focus {
+  border: none;
+  outline: none;
+}
+.resulti {
+  @include flexthing;
+  width: 60%;
+  height: 10%;
+  color: black;
+  background-color: white;
+  font-size: large;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  @include flexthing;
+
+  width: auto;
+  div {
+    @include flexthing;
+    margin: 3rem;
+    color: black;
+    border: 2px black solid;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+@media only screen and (max-width: 1720px) {
+  body,
+  .main-container,
+  .buttons,
+  h1 {
+    @include flexthing;
+    width: auto;
+    height: auto;
+    div {
+      margin: 0.1rem;
+      border: none;
+    }
+  }
+  h1 {
+    color: white;
+  }
+  .resulti {
+    width: 100vw;
+    padding: 0.9rem;
+  }
+  .main-container {
+    background-color: transparent;
+  }
+}
