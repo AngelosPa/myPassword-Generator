@@ -45,7 +45,14 @@ button {
   font-size: large;
   letter-spacing: 2px;
 }
-
+.forcopy {
+  @include flexthing;
+  width: 3.9rem;
+  height: 3rem;
+  background-color: #000000;
+  color: white;
+  border-radius: 0%;
+}
 .buttons {
   @include flexthing;
 

@@ -399,6 +399,18 @@ button {
   letter-spacing: 2px;
 }
 
+.forcopy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3.9rem;
+  height: 3rem;
+  background-color: #000000;
+  color: white;
+  border-radius: 0%;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
