@@ -53,7 +53,8 @@ choose30.addEventListener("click", boom3);
 const copy = () => {
   let copytext = document.querySelector("#gms");
   copytext.select();
-  //
+  // this execCommand executes
   document.execCommand("copy");
 };
+//we trigger the
 document.querySelector("#copia").addEventListener("click", copy);
