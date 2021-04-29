@@ -31,11 +31,8 @@ const passGeneration = (n) => {
   }
   return codicos.substring(1, n + 1);
 };
-//i store the result into a var
-let result1 = ` ${Math.floor(Math.random() * 10000)}`;
-let result2 = ` ${passGeneration(8)}`;
-let result3 = ` ${passGeneration(30)}`;
-//i grab the .resulti and i place the result with innerText inside
+
+//i grab the passGeneration(n)-with the right argument always- and i assign it with the value of my resulti input
 const boom1 = () => {
   document.querySelector(".resulti").value = Math.floor(Math.random() * 10000);
 };
@@ -44,18 +41,13 @@ const boom2 = () => {
 };
 const boom3 = () => {
   //document.querySelector(".resulti").innerHTML = result3;
+  //an other way to grab
   document.getElementById("gms").value = passGeneration(30);
-  console.log(result3);
 };
-
+//so every of my 3 buttons activates the right function who shows the 4, 8 or 30 result
 choose4.addEventListener("click", boom1);
 choose8.addEventListener("click", boom2);
 choose30.addEventListener("click", boom3);
-
-// Examples you will have other passwords for sure
-//passGeneration()  ➞ Y3mI9x7bvPY86T?oM§hIbgh!MLwA77N
-// passGeneration()  ➞ Oy$tkBGoo5fg§mO4AdV&Kh8XXZR4d7K
-// passGeneration()  ➞ v0ZwDrn@hfI€kOKWH§k6kqub6zfpuyP
 
 //for the copy button we make this function
 const copy = () => {

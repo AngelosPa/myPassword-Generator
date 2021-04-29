@@ -394,9 +394,11 @@ button {
   width: 60%;
   height: 10%;
   color: black;
-  background-color: white;
+  background-color: snow;
   font-size: large;
   letter-spacing: 2px;
+  border-radius: 6%;
+  text-align: center;
 }
 
 .forcopy {
